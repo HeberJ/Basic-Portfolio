@@ -34,13 +34,13 @@ header nav ul li {
 }
 
 header nav ul li a {
-
+  color: #777777;
 }
 
 #about-me {
     background-color: lightgray;
     padding: 20px;
-    border-top: 1px solid grey;
+    border-top: 1px solid lightgrey;
     padding-bottom: 50px;
     border-bottom: 5px solid #4aaaa5;
 }
@@ -59,6 +59,7 @@ header nav ul li a {
 #about-me section div h2 {
     padding: 20px 0px 20px 0px;
     font-size: 30px;
+    color: #4aaaa5;
     border-bottom: 2px solid lightgrey;
 }
 
@@ -84,14 +85,14 @@ header nav ul li a {
 }
 
 footer {
-  background-color:#666666;
+  bottom: 0;
+  left:0;
   width:100%;
   padding:20px;
   padding-bottom:16px;
+  background-color:#666666;
   text-align:center;
   position:fixed;
-  bottom: 0;
-  left:0;
   transition: .3s linear;
 }
 footer:hover{
