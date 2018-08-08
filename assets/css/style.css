@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html, body, #about-me {
+  height: 100%;
+}
+
 header {
     margin: 0;
     width: 960px;
@@ -19,30 +23,36 @@ header h1 {
     text-align: center;
     font-size: 30px;
     color: white;
+    font-family: 'Georgia', Times, Times New Roman, serif;
     background-color: #4aaaa5
 }
 
 header nav ul {
-
+  position: relative;
+  top: 25px;
 }
 
 header nav ul li {
     display: inline-block;
     float: right;
     list-style: none;
-    padding: 25px 15px 25px 15px;
+    padding: 0px 15px 0px 15px;
+    border-right:  1px solid #777777;
+}
+
+header nav ul li:first-of-type {
+  border-right: none;
 }
 
 header nav ul li a {
   color: #777777;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 #about-me {
-    background-color: lightgray;
+    background: url("../images/qbkls.png");
     padding: 20px;
-    border-top: 1px solid lightgrey;
-    padding-bottom: 50px;
-    border-bottom: 5px solid #4aaaa5;
+    border-top: 1px solid #777777;
 }
 
 #about-me section {
@@ -60,7 +70,7 @@ header nav ul li a {
     padding: 20px 0px 20px 0px;
     font-size: 30px;
     color: #4aaaa5;
-    border-bottom: 2px solid lightgrey;
+    border-bottom: 2px solid #777777;
 }
 
 #who-i-am {
@@ -78,6 +88,8 @@ header nav ul li a {
 
 #who-i-am p {
     padding: 20px 10px 10px 0px;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
 }
 
 #contact-link {
@@ -94,6 +106,7 @@ footer {
   text-align:center;
   position:fixed;
   transition: .3s linear;
+  border-top: 5px solid #4aaaa5;
 }
 footer:hover{
   background-color: #4aaaa5
@@ -102,6 +115,7 @@ footer:hover{
 footer p {
   position: relative;
   bottom: -10px;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 80%;
   color: lightgray;
 }
