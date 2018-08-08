@@ -105,21 +105,23 @@ input, select {
 /* MY CODE */
 
 * {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 header {
-  width: 960px;
-  margin: 0 auto;
+    margin: 0;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
 }
 
 header h1 {
-  float: left;
-  padding: 20px 20px 20px 20px;
-  text-align: center;
-  font-size: 30px;
-  color: white;
-  background-color: #4aaaa5
+    float: left;
+    padding: 20px 20px 20px 20px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    background-color: #4aaaa5
 }
 
 header nav ul {
@@ -127,10 +129,10 @@ header nav ul {
 }
 
 header nav ul li {
-  display: inline-block;
-  float: right;
-  list-style: none;
-  padding: 30px 15px 25px 15px;
+    display: inline-block;
+    float: right;
+    list-style: none;
+    padding: 25px 15px 25px 15px;
 }
 
 header nav ul li a {
@@ -138,51 +140,52 @@ header nav ul li a {
 }
 
 #about-me {
-  background-color: gray;
-  padding: 20px;
+    background-color: lightgray;
+    padding: 20px;
+    border-top: 1px solid grey;
+    border-bottom: 5px solid #4aaaa5;
 }
 
 #about-me section {
-  width: 960px;
-  margin: 0 auto;
-  background-color: #ff9;
+    width: 960px;
+    margin: 0 auto;
+    background-color: white;
 }
 
 #about-me section div {
-  margin-left: 20px;
-  padding: 0px 0px 20px 0px;
-  background-color: green;
+    margin-left: 20px;
+    padding: 0px 20px 20px 0px;
 }
 
 #about-me section div h2 {
-  padding: 20px 0px 20px 0px;
-  font-size: 30px;
-  background-color: #cccccc;
+    padding: 20px 0px 20px 0px;
+    font-size: 30px;
+    border-bottom: 2px solid lightgrey;
 }
 
 #who-i-am {
-  margin-left: 0;
+    margin-left: 0;
 }
 
 #who-i-am img {
-  padding: 20px 10px 10px 0px;
-  height: 15%;
-  width: 15%;
-  position: relative;
-  float: left;
-  left: -20px;
+    padding: 20px 10px 10px 0px;
+    height: 15%;
+    width: 15%;
+    position: relative;
+    float: left;
+    left: -20px;
 }
 
 #who-i-am p {
-  padding: 20px 10px 10px 0px;
+    padding: 20px 10px 10px 0px;
 }
 
 #contact-link {
-  padding-right: 0px;
+    padding-right: 0px;
 }
 
 .clearfix::after {
-  content: "";
-  clear: both;
-  display: block;
+    content: "";
+    clear: both;
+    display: block;
 }
