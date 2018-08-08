@@ -41,6 +41,7 @@ header nav ul li a {
     background-color: lightgray;
     padding: 20px;
     border-top: 1px solid grey;
+    padding-bottom: 50px;
     border-bottom: 5px solid #4aaaa5;
 }
 
@@ -80,6 +81,28 @@ header nav ul li a {
 
 #contact-link {
     padding-right: 0px;
+}
+
+footer {
+  background-color:#666666;
+  width:100%;
+  padding:20px;
+  padding-bottom:16px;
+  text-align:center;
+  position:fixed;
+  bottom: 0;
+  left:0;
+  transition: .3s linear;
+}
+footer:hover{
+  background-color: #4aaaa5
+}
+
+footer p {
+  position: relative;
+  bottom: -10px;
+  font-size: 80%;
+  color: lightgray;
 }
 
 .clearfix::after {
