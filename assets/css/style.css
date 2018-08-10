@@ -1,15 +1,19 @@
 
 
-/* MY CODE */
-
+/*Takes away the underline for hyperlinks*/
 * {
     text-decoration: none;
 }
 
-html, body, #about-me {
+/*This is to make my background extand the whole page*/
+html, body, #about-me, #contact-me {
   height: 100%;
 }
 
+
+/*TOP HEADER AND NAV BAR STYLE*/
+
+/*Centers the header and limits the width to 960px*/
 header {
     margin: 0;
     width: 960px;
@@ -17,6 +21,7 @@ header {
     position: relative;
 }
 
+/*Styles my heading with my Name in in*/
 header h1 {
     float: left;
     padding: 20px 20px 20px 20px;
@@ -27,11 +32,13 @@ header h1 {
     background-color: #4aaaa5
 }
 
+/*Centering the nav bar text horizontally */
 header nav ul {
   position: relative;
   top: 25px;
 }
 
+/*Aligning the list elemet side by side*/
 header nav ul li {
     display: inline-block;
     float: right;
@@ -40,32 +47,45 @@ header nav ul li {
     border-right:  1px solid #777777;
 }
 
+/*Setting the dividers between the hyper links*/
 header nav ul li:first-of-type {
   border-right: none;
 }
 
+/*Setting the text style for nav menu*/
 header nav ul li a {
   color: #777777;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
+/*Alignment Adjustments*/
+.link {
+  padding-right: 0px;
+}
+
+
+/*ABOUT ME*/
+/*Setting the background and underlinin the top bar*/
 #about-me {
     background: url("../images/qbkls.png");
     padding: 20px;
     border-top: 1px solid #777777;
 }
 
+/*Centering and limiting th width of the page*/
 #about-me section {
     width: 960px;
     margin: 0 auto;
     background-color: white;
 }
 
+/*Adjustments to help make inner content line up*/
 #about-me section div {
     margin-left: 20px;
     padding: 0px 20px 20px 0px;
 }
 
+/*Styling the about me heading*/
 #about-me section div h2 {
     padding: 20px 0px 20px 0px;
     font-size: 30px;
@@ -73,10 +93,12 @@ header nav ul li a {
     border-bottom: 2px solid #777777;
 }
 
+/*Adjusting the alignment */
 #who-i-am {
     margin-left: 0;
 }
 
+/*Setting the size and position of the image*/
 #who-i-am img {
     padding: 20px 10px 10px 0px;
     height: 15%;
@@ -86,16 +108,14 @@ header nav ul li a {
     left: -20px;
 }
 
+/*Styling the text*/
 #who-i-am p {
     padding: 20px 10px 10px 0px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
 
-#contact-link {
-    padding-right: 0px;
-}
-
+/*Sticky footer settings*/
 footer {
   bottom: 0;
   left:0;
@@ -108,16 +128,89 @@ footer {
   transition: .3s linear;
   border-top: 5px solid #4aaaa5;
 }
-footer:hover{
+
+footer:hover {
   background-color: #4aaaa5
 }
 
+/*Copyrights text setting and stylings*/
 footer p {
   position: relative;
   bottom: -10px;
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 80%;
   color: lightgray;
+}
+
+
+/*CANTACT PAGE*/
+/*Background for body section*/
+#contact-me {
+  background: url("../images/qbkls.png");
+  padding: 20px;
+  border-top: 1px solid #777777;
+}
+
+/**/
+#contact-me section {
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+/**/
+#contact-me section div {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 0px 0px 20px 0px;
+}
+
+/*Contact heading*/
+#contact-me section div h2 {
+  padding: 20px 0px 20px 0px;
+  font-size: 30px;
+  color: #4aaaa5;
+  border-bottom: 2px solid #777777;
+}
+
+/**/
+#info-section {
+  padding: 20px 0 0 0;
+  width: 100%;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+
+}
+
+/**/
+#info-section p {
+  padding: 10px 0 5px 0;
+}
+
+/**/
+input {
+  width: 99.5%;
+  border: 1px solid lightgray;
+  padding: 5px 0px 5px 5px;
+  color: #777777;
+}
+
+textarea {
+  width: 99.5%;
+  height: 150px;
+  border: 1px solid lightgray;
+  padding: 5px 0 5px 5px;
+  color: #777777;
+
+}
+
+#button {
+  width: 100px;
+  margin: 10px 0 0 0;
+  background-color: #4aaaa5;
+  color: white;
+  height: 40px;
+  font-size: 15px;
 }
 
 .clearfix::after {

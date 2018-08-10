@@ -2,50 +2,57 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Contact Me</title>
-    <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
 <body>
-    <header>
-        <h1>
-            <strong>Heber Jimenez</strong>
-        </h1>
-        <ul>
-            <li>
-                <a href="index.html">About</a>
-            </li>
-
-            <li>
-                <a href="portfolio.html">Portfolio</a>
-            </li>
-
-            <li>
-                <a href="contact.html">Contact</a>
-            </li>
+  <header class="clearfix">
+    <h1>
+      <strong>Heber Jimenez</strong>
+    </h1>
+    <nav>
+      <ul>
+          <li class="link">
+            <a href="contact.html">Contact</a>
+          </li>
+  
+          <li id="portfolio-link">
+            <a href="portfolio.html">Portfolio</a>
+          </li>
+  
+          <li id="about-link">
+            <a href="index.html">About</a>
+          </li>
         </ul>
-    </header>
+    </nav>
+  </header>
 
-    <div>
+  <div id="contact-me">
+    <section>
+      <div>
         <h2>Contact</h2>
-        <form action="">
-            Name
-            <br>
-            <input type="text" name="Name" value="John Smith">
+        <form action="" id="info-section">
+          <p>Name</p> 
+          <input type="text" name="Name" value="John Smith" onfocus="this.value=''">
 
-            <br>Email
-            <br>
-            <input type="text" name="Email" value="example@gmail.com">
+          <p>Email</p>
+          <input type="text" name="Email" onfocus="this.value=''" value="example@gmail.com">
 
-            <br>Message
-            <br>
-            <input type="text" name="Message">
+          <p>Message</p>
+          <textarea cols="30" rows="5"></textarea>
 
-            <br>
-            <input type="submit" value="Submit">
+          <br>
+          <input type="submit" value="Submit" id="button">
         </form>
-    </div>
+      </div>
+    </section>
+  </div>
+  <footer>
+    <p>Copyright©</p>
+  </footer>
 </body>
 
 </html>
