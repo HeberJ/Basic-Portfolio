@@ -100,7 +100,7 @@ header nav ul li a {
 
 /*Setting the size and position of the image*/
 #who-i-am img {
-    padding: 20px 10px 10px 0px;
+    padding: 40px 10px 10px 0px;
     height: 15%;
     width: 15%;
     position: relative;
@@ -110,7 +110,7 @@ header nav ul li a {
 
 /*Styling the text*/
 #who-i-am p {
-    padding: 20px 10px 10px 0px;
+    padding: 40px 10px 10px 0px;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
     color: #777777;
 }
@@ -213,9 +213,61 @@ textarea {
   font-size: 15px;
 }
 
+#portfolio {
+  background: url("../images/qbkls.png");
+  padding: 20px;
+  border-top: 1px solid #777777;
+}
+
+#portfolio section {
+  width: 960px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+#portfolio section figure {
+  margin-left: 20px;
+  padding: 0px 20px 20px 0px;
+}
+
+#portfolio section figure h2 {
+  padding: 20px 0px 20px 0px;
+  font-size: 30px;
+  color: #4aaaa5;
+  border-bottom: 2px solid #777777;
+}
+
+#main-options {
+  padding: 50px 0 20px 0;
+}
+
+#main-options div {
+  display: inline-block;
+  width: 300px;
+  height: 250px;
+  margin: 0;
+}
+
+#main-options div img {
+  height: 90%;
+  width: 90%;
+  padding: 0 20px 20px 0;
+}
+
+#main-options div h3 {
+  background-color: #4aaaa5;
+  color: white;
+  padding: 15px 0 15px 0;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  bottom: 30%;
+}
+
+
 .clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
+  content: "";
+  clear: both;
+  display: block;
 }
 
